@@ -1,0 +1,11 @@
+export const ORANGE1 = '#FF9164';
+export const ORANGE2 = '#FAECE3';
+export const MAUVE1 = '#B388FF';
+export const MAUVE2 = '#D9C3FF';
+export const MAUVE3 = '#ECE0FD';
+export const PURPLE = '#8A40F0';
+export const GRAY1 = '#D9D9D9';
+export const GRAY2 = '#EEEEEE';
+export const GREEN1 = '#E0F8D1';
+export const BLUE1 = '#536DFE';
+export const ERROR = '#FF0000';
