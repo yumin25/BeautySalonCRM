@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.salon.beauty.model.mapper.shop.ShopModifyMapper">
+    <update id="shopModify" parameterType="ShopModifyRequestDTO">
+        UPDATE SHOP
+        SET SHOP_LOGIN_ID=#{shopLoginId}
+            ,SHOP_PASSWORD=#{shopPassword}
+            ,SHOP_NAME=#{shopName}
+            ,SHOP_PHONE=#{shopPhone}
+            ,SHOP_CEO=#{shopCeo}
+            ,SHOP_CEO_PHONE=#{shopCeoPhone}
+            ,POINT_ACCUMULATION_RATE=#{pointAccumulationRate}
+            ,POINT_ACCUMULATION_CONDITION=#{pointAccumulationCondition}
+        WHERE SHOP_ID=#{shopId}
+    </update>
+</mapper>

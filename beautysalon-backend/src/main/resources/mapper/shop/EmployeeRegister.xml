@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.salon.beauty.model.mapper.shop.EmployeeRegisterMapper">
+    <insert id="employeeRegister" parameterType="EmployeeRegisterRequestDTO">
+        INSERT INTO EMPLOYEE(
+                         SHOP_ID
+                        ,EMPLOYEE_WORK_STATUS
+                        ,EMPLOYEE_GENDER
+                        ,EMPLOYEE_NAME
+                        ,EMPLOYEE_PHONE
+                        ,EMPLOYEE_ADDRESS
+                        ,MEMO
+                        ,IS_DELETED
+                        )
+        VALUES(
+              #{shopId}
+              ,#{employeeWorkStatus}
+              ,#{employeeGender}
+              ,#{employeeName}
+              ,#{employeePhone}
+              ,#{employeeAddress}
+              ,#{memo}
+              ,0
+              )
+    </insert>
+</mapper>
